@@ -43,15 +43,15 @@
 
             <!-- Nav Item - Dashboard -->
             <li class="nav-item">
-                <a class="nav-link" href="{{ route('kategori.index') }}">
+                <a class="nav-link" href="{{ route('barang.index') }}">
                     <i class="fa-solid fa-house"></i>
                     <span>Dashboard</span>
                 </a>
             </li>
 
-            <!-- Nav Item - Produk -->
+            <!-- Nav Item - Barang -->
             <li class="nav-item">
-                <a class="nav-link collapsed" href="{{ route('kategori.index') }}" data-toggle="collapse" data-target="#collapseOne"
+                <a class="nav-link collapsed" href="{{ route('barang.index') }}" data-toggle="collapse" data-target="#collapseOne"
                     aria-expanded="true" aria-controls="collapseOne">
                     <i class="fa-solid fa-boxes-stacked"></i>
                     <span>Barang</span>
@@ -59,8 +59,8 @@
                 <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Manajemen Barang</h6>
-                        <a class="collapse-item" href="{{ route('kategori.index') }}">Data Barang</a>
-                        <a class="collapse-item" href="{{ route('kategori.create') }}">Tambah Barang</a>
+                        <a class="collapse-item" href="{{ route('barang.index') }}">Data Barang</a>
+                        <a class="collapse-item" href="{{ route('barang.create') }}">Tambah Barang</a>
                     </div>
                 </div>
             </li>

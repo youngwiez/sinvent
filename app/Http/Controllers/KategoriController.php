@@ -59,7 +59,7 @@ class KategoriController extends Controller
                 ->with(['error' => 'Terjadi kesalahan saat menyimpan data']);
         }
         return redirect()->route('kategori.index')
-            ->with(['success' => 'Data berhasil disimpan']);
+            ->with(['success' => 'Data kategori berhasil disimpan']);
     }
 
     /**
