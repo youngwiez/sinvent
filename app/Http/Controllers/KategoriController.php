@@ -12,12 +12,21 @@ class KategoriController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function index(Request $request)
     {
         // query builder
-        $kategori = DB::table('kategori')
-            ->select('id','deskripsi',DB::raw('ketKategori(kategori) as kat'))
-            ->paginate(3);
+        if ($request->search){
+            $kategori = DB::table('kategori')
+                            ->select('id','deskripsi',DB::raw('ketKategori(kategori) as kat'))
+                            ->where('id','like','%'.$request->search.'%')
+                            ->orWhere('deskripsi','like','%'.$request->search.'%')
+                            ->orWhere('kategori','like','%'.$request->search.'%')
+                            ->paginate(3);
+        } else {
+            $kategori = DB::table('kategori')
+                            ->select('id','deskripsi',DB::raw('ketKategori(kategori) as kat'))
+                            ->paginate(3);
+        }
         return view('dashboard.kategori.index', ['kategori' => $kategori]);
     }
 

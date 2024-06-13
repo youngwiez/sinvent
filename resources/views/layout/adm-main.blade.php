@@ -97,18 +97,18 @@
                 </div>
             </li>
 
-            <!-- Nav Item - Pengeluaran -->
+            <!-- Nav Item - Barang Keluar -->
             <li class="nav-item">
-                <a class="nav-link collapsed" href="{{ route('kategori.index') }}" data-toggle="collapse" data-target="#collapseFour"
+                <a class="nav-link collapsed" href="{{ route('barangkeluar.index') }}" data-toggle="collapse" data-target="#collapseFour"
                     aria-expanded="true" aria-controls="collapseTwo">
                     <i class="fa-solid fa-upload"></i>
-                    <span>Pengeluaran</span>
+                    <span>Barang Keluar</span>
                 </a>
                 <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Manajemen Pengeluaran</h6>
-                        <a class="collapse-item" href="{{ route('kategori.index') }}">Data Pengeluaran</a>
-                        <a class="collapse-item" href="{{ route('kategori.create') }}">Tambah Pengeluaran</a>
+                        <h6 class="collapse-header">Manajemen Barang Keluar</h6>
+                        <a class="collapse-item" href="{{ route('barangkeluar.index') }}">Data Barang Keluar</a>
+                        <a class="collapse-item" href="{{ route('barangkeluar.create') }}">Tambah Barang Keluar</a>
                     </div>
                 </div>
             </li>
